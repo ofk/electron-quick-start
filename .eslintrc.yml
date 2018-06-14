@@ -24,3 +24,4 @@ rules:
       functions: never
   max-len: off
   no-console: off
+  react/jsx-one-expression-per-line: off

@@ -12,12 +12,12 @@ module.exports = {
       {
         enforce: 'pre',
         exclude: nodeModulePath,
-        test: /\.js$/,
+        test: /\.jsx?$/,
         use: 'eslint-loader',
       },
       {
         exclude: nodeModulePath,
-        test: /\.js$/,
+        test: /\.jsx?$/,
         use: [
           {
             loader: 'babel-loader',
@@ -48,6 +48,7 @@ module.exports = {
   resolve: {
     extensions: [
       '.js',
+      '.jsx',
     ],
   },
   node: {

@@ -10,7 +10,7 @@ module.exports = {
   ...config,
   entry: {
     renderer: [
-      path.resolve(__dirname, '..', 'src', 'renderer.js'),
+      path.resolve(__dirname, '..', 'src', 'renderer.jsx'),
     ],
   },
   module: {

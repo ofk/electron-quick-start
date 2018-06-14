@@ -6,8 +6,9 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "webpack --config scripts/webpack.config.js --mode production --progress --profile",
+    "open": "electron .",
     "prestart": "npm run build",
-    "start": "electron .",
+    "start": "npm run open",
     "lint": "eslint ."
   },
   "repository": "https://github.com/electron/electron-quick-start",

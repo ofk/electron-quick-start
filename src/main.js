@@ -3,6 +3,7 @@ const {
   app,
   BrowserWindow,
 } = require('electron'); // eslint-disable-line import/no-extraneous-dependencies
+const path = require('path');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -13,7 +14,7 @@ const createWindow = () => {
   mainWindow = new BrowserWindow({ width: 800, height: 600 });
 
   // and load the index.html of the app.
-  mainWindow.loadFile('index.html');
+  mainWindow.loadFile(path.join(__dirname, 'index.html'));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

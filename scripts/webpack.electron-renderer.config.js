@@ -46,6 +46,10 @@ module.exports = {
     ],
   },
   optimization: {
+    splitChunks: {
+      chunks: 'initial',
+      name: 'vendor',
+    },
     minimizer: [
       new UglifyJsPlugin({
         cache: true,
@@ -73,7 +77,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
-      chunkFilename: '[id].css',
+      chunkFilename: 'vendor.css',
     }),
   ],
   target: 'electron-renderer',

@@ -9,6 +9,7 @@
     "open-electron": "electron .",
     "prestart-electron": "npm run build-electron",
     "start-electron": "npm run open-electron",
+    "pack-electron": "electron-packager . --out=packages --ignore=\"/([\\.~#]|.+?\\.(md|log)|package-lock\\.json|yarn\\.lock|node_modules|packages|scripts|src)\"",
     "prebuild-web": "rimraf dist",
     "build-web": "webpack --config scripts/webpack.web.config.js --mode production --progress --profile",
     "serve-web": "webpack-serve --config scripts/webpack.web.config.js --host 0.0.0.0",

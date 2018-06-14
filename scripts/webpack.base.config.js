@@ -29,6 +29,9 @@ module.exports = {
                     targets: {
                       browsers: '> 1%',
                     },
+                    ...(process.env.WEBPACK_TARGET_WEB ? {
+                      modules: false,
+                    } : {}),
                   },
                 ],
               ],

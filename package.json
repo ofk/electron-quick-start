@@ -9,6 +9,8 @@
     "open-electron": "electron .",
     "prestart-electron": "npm run build-electron",
     "start-electron": "npm run open-electron",
+    "prebuild-web": "rimraf dist",
+    "build-web": "webpack --config scripts/webpack.web.config.js --mode production --progress --profile",
     "lint": "eslint ."
   },
   "repository": "https://github.com/electron/electron-quick-start",

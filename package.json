@@ -54,6 +54,8 @@
     "webpack-serve": "^2.0.2"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   }
 }

@@ -4,11 +4,11 @@
   "description": "A minimal Electron application",
   "main": "dist/main.js",
   "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "webpack --config scripts/webpack.config.js --mode production --progress --profile",
-    "open": "electron .",
-    "prestart": "npm run build",
-    "start": "npm run open",
+    "prebuild-electron": "rimraf dist",
+    "build-electron": "webpack --config scripts/webpack.electron.config.js --mode production --progress --profile",
+    "open-electron": "electron .",
+    "prestart-electron": "npm run build-electron",
+    "start-electron": "npm run open-electron",
     "lint": "eslint ."
   },
   "repository": "https://github.com/electron/electron-quick-start",

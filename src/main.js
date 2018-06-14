@@ -1,9 +1,10 @@
 // Modules to control application life and create native browser window
-const {
+// eslint-disable-next-line import/no-extraneous-dependencies
+import {
   app,
   BrowserWindow,
-} = require('electron'); // eslint-disable-line import/no-extraneous-dependencies
-const path = require('path');
+} from 'electron';
+import path from 'path';
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.

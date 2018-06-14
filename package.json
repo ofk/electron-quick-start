@@ -35,6 +35,7 @@
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
     "electron": "^2.0.0",
+    "electron-packager": "^12.1.1",
     "eslint": "^5.5.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-loader": "^2.1.0",
